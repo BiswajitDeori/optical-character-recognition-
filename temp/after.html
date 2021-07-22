@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: teal;border: 5px solid black;">
+    <div style="display: flex;flex-direction: row;justify-content: space-around;">
+    <div style="justify-content: center;align-items: center;">
+        <h1 style="background-color: aqua;border: 2px solid white; border-radius: 7px;text-align: center;">Original images</h1>
+       
+    <img src="{{url_for('static',filename='file12.jpg')}}" style="width: 420px; height: 360px;border: 5px solid rgb(240, 222, 222);" alt="images">
+   
+    </div>
+    <div>
+        <h1 style="background-color: aqua;border: 2px solid white; border-radius: 7px;text-align: center;">After Processing</h1>
+       
+        <img src="{{url_for('static',filename='after.jpg')}}" alt="image1" style="width: 420px; height: 360px;border: 5px solid rgb(240, 222, 222);" >
+       
+    </div>
+
+</div>
+
+<div style="align-items: center;font-family: 'Courier New', Courier, monospace;" >
+    <div>
+    <h1 style="background-color: aqua;text-align: center;width: 30%;border: 2px solid black;border-radius: 12px;text-transform: capitalize;"> detected expression</h1>
+ <p style="font-weight: 800;font-size: xx-large;background-color: white;border:black 2px solid;border-radius: 9px;justify-content: center;width: auto;text-align: center;" >{{data}}</p>
+</div>
+<div style="font-weight: 500;justify-content: center;align-items: center;">
+    <h1 style="background-color: aqua;text-align: center;width: 30%;border: 2px solid black;border-radius: 12px;text-transform: capitalize;">Result</h1>
+    <p style="border:black 2px solid;border-radius: 9px;text-align: center;font-size: xx-large;font-weight: 600;background-color:whitesmoke;">{{final}}</p>
+</div>
+
+ </div>
+</body>
+</html>
